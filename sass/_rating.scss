@@ -1,0 +1,25 @@
+@use './colors'as *;
+
+.rating__container {
+    padding: 2rem 0;
+}
+
+.rating {
+    background-color: hsl($clr-light-grayish-magenta);
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+
+    &__icons {
+        display: flex;
+        gap: 0.5rem;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    &__mess {
+        color: hsl($clr-very-dark-magenta);
+        font-weight: 700;
+    }
+}

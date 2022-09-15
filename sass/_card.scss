@@ -1,0 +1,38 @@
+@use './colors'as*;
+
+
+.card {
+    background-color: hsl($clr-very-dark-magenta);
+    color: hsl($clr-white);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+
+    &__header {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+        width: 50px;
+    }
+
+    &__info {
+        text-align: left;
+    }
+
+    &__name {
+        font-weight: 700;
+    }
+
+    &__label {
+        color: hsl($clr-soft-pink);
+    }
+
+    &__body {
+        margin-top: 1rem;
+        text-align: left;
+    }
+}
