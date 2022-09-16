@@ -39,12 +39,44 @@ img {
     }
 
     &__title {
+        font-size: 3.25rem;
         color: hsl($clr-very-dark-magenta);
         font-weight: 700;
+        line-height: 1;
+        margin-bottom: 1rem;
     }
 
     &__description {
         color: hsl($clr-dark-grayish-magenta);
     }
 
+}
+
+@include mq {
+
+    .wrapper {
+        background-image: url('../images/bg-pattern-top-desktop.svg');
+        background-position: center;
+        background-repeat: repeat;
+        background-size: cover;
+    }
+
+    .social {
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+        padding: 2rem 8rem;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .social__welcome {
+        width: 40%;
+        text-align: left;
+    }
+
+    .rating__container {
+        width: 50%;
+    }
 }
